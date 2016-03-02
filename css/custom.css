@@ -1,14 +1,160 @@
-#leader-container {
-	width: 1170px !important;
+#leader-container, #home-container, #rules-container, #teams-container {
+	width: 1170px;
+}
+
+#leader-container, #rules-container, #register-container, #teams-container {
+	display: none;
+}
+#register-container {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 6%;
+    width: 500px;
 }
 #leader-container {
 	margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 2%;
+    margin-top: 6%;
     background: white;
 }
+#rules-container, #home-container, #teams-container {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 6%;
+}
 #body-background {
-	background: lightgray;
+	/*background: lightgray;*/
+	background-image: url("http://cyberfed.org/templates/logistix/images/backgrounds/bridge-bobybkg.jpg");
+}
+#row-tabs {
+	border-top: 1px solid lightgray;
+}
+#centering{
+	margin-left: 5%;
+}
+.hacks-img-width {
+	max-width: 250px;
+	margin-left: 2% !important;
+}
+.header {
+	color: #ffa500;
+	font-weight: 300;
+}
+.rules-header {
+	font-weight: 300;
+	color: #e7a700;
+}
+.cpp-green {
+	background-color: #212121;
+	/*background-image: url("http://cyberfed.org/templates/logistix/images/backgrounds/bridge.jpg");*/
+}
+.cyber-yellow {
+	color: #e7a700;
+}
+.nav-colors{
+	background-color: #000000; 
+}
+#social-media-container {
+	width: 300px;
+	float: right;
+    min-height: 1px;
+    margin-left: 20px;
+}
+#social-media-container ul {
+	padding: 0; 
+    margin: 0;
+    list-style-type: none;
+}
+#social-media-container li {
+	margin: 0 5px;
+}
+#social-media-container ul li {
+	float: right;
+}
+#leaderboards, #hackathons, #rules {
+	cursor: pointer;
+}
+
+.login-register {
+	width: 150px;
+	font-size: 12px;
+}
+#login {
+	float: right;
+	margin-top: 13px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #ffa500;
+}
+#register {
+	float: right;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-right: 5px;
+	background-color: #ffa500;
+}
+nav ul li.nohover:hover{
+	background-color: inherit;
+}
+#cyber-logo {
+	line-height: 90px;
+}
+.hacks-color{
+	background-color: #212121;
+}
+#fixed-nav {
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+.custom-input-field input[type=search] {
+  display: block;
+  line-height: normal;
+  padding-left: 4rem;
+  width: calc(100% - 4rem);
+}
+.custom-input-field input[type=search]:focus {
+	background-color: #616161;
+	color: white;
+}
+.custom-input-field input[type=search]:focus + label i{
+	color: white;
+}
+.custom-input-field {
+  	position: relative;
+  	width: 200px;
+  	height: 40px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.custom-input-field input[type=search] ~ .mdi-navigation-close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: .3s color;
+}
+#search {
+	font-size: 15px;
+}
+#submit {
+	margin-right: auto;
+	margin-right: auto;
+	background-color: #ffa500;
+}
+
+@media screen and (max-width: 480px) {
+	#home-container {
+		width: 500px;
+	}
 }
